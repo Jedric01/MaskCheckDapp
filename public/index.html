@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="index-bundle.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Daily Mask</h1>
+          <p>Get your daily masks here! Members are eligible for 1 mask/day</p>
+          <span id = "textResult"></span>
+          <button type="submit" class = "btn btn-primary" id="getMaskButton">Get Mask</button>
+
+          <h2>Register as a member</h2>
+          <form id="addMemberData">
+            <div class="form-group">
+              <label for="addNameInput">Enter name (string)</label>
+              <input id="addNameInput" type="string" class="form-control"></input>
+              <label for="addAddressInput">Enter address</label>
+              <input id = "addAddressInput" type ="string" class = "form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <span id="feedbackRegistration"></span>
+          <h3>Reset Eligibility(Only Moderator)</h3>
+          <button type="submit" class="btn btn-primary" id="resetButton">Reset</button>
+          <span id="feedbackReset"></span>
+        </div>
+      </div>
+    </div>
+
+    <a href="query.html">Query</a>
+  </body>
+</html>
